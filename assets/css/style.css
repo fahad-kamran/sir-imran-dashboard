@@ -1,0 +1,202 @@
+/* global & custom css file */
+/* import font from fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --color-primary: #114a82;
+    --color-secondary: #9ca0a6;
+    --color-success: #00a31f;
+    --color-warning: #ffa900;
+    --color-info: #08cafe;
+    --color-danger: #dc4c41;
+    --color-dark: #424242;
+    --color-black:#000;
+    --color-light: #cfcfcf;
+    --color-white: #fff;
+    /* fonts */
+    --font-primary: 'PT Sans', sans-serif;
+    --font-secondary: 'Source Sans Pro', sans-serif;
+}
+
+
+
+body {
+    color: var(--color-dark);
+    font-family: var(--font-secondary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+    font-family: var(--font-primary);
+}
+
+.text_primary {
+    color: var(--color-primary);
+}
+
+.bg_primary {
+    background-color: var(--color-primary);
+}
+
+.text_secondary {
+    color: var(--color-secondary);
+}
+
+.bg_secondary {
+    background-color: var(--color-secondary);
+}
+
+.text_light {
+    color: var(--color-light);
+}
+
+.bg_light {
+    background-color: var(--color-light);
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-primary {
+    color: var(--color-primary) !important;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-unset {
+    all: unset;
+}
+
+.list_style_none {
+    list-style: none;
+    padding-left: 0;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.welcome_text {
+    font-weight: 600;
+}
+
+.welcome_text span {
+    font-size: 18px;
+    font-family: var(--font-secondary);
+}
+
+.welcome_text .logout {
+    color: var(--color-primary);
+}
+
+.dashboard .tab_section .nav-link {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.dashboard .tab_section .nav-link.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    margin-left: 10px;
+}
+
+:is(.dashboard .tab_section) .info_report,
+.success_report,
+.warn_report,
+.danger_report {
+    position: relative;
+    overflow: hidden;
+}
+
+:is(.dashboard .tab_section) .info_report::before,
+.success_report::before,
+.warn_report::before,
+.danger_report::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.info_report::before {
+    background-color: var(--color-info);
+}
+
+.success_report::before {
+    background-color: var(--color-success);
+}
+
+.warn_report::before {
+    background-color: var(--color-warning);
+}
+
+.danger_report::before {
+    background-color: var(--color-danger);
+}
+.cash_bank_balance_list li:nth-child(odd){
+    background-color: var(--color-light);
+}
+.cash_bank_balance_list li:nth-child(even){
+    background-color: #e8e9ec;
+}
