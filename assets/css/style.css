@@ -10,7 +10,7 @@
 
 :root {
     /* colors */
-    --color-primary: #114a82;
+    --color-primary: #1264b5;
     --color-secondary: #9ca0a6;
     --color-success: #00a31f;
     --color-warning: #ffa900;
@@ -145,18 +145,45 @@ a {
 .welcome_text .logout {
     color: var(--color-primary);
 }
-
+.dashboard .category_title{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50px);
+    width: 100px;
+    background-color: #c6d9f3;
+    color: var(--color-primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.dashboard .inventory_container{
+    max-width: 70px;
+    height: auto;
+    text-align: center;
+}
+.dashboard .inventory_container .inventory_title{
+    margin: 0;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    line-height: 14px;
+}
+.dashboard .inventory_container img{
+    max-width: 40px;
+    height: auto;
+    margin-bottom: 8px;
+}
 .dashboard .tab_section .nav-link {
     background-color: var(--color-secondary);
     color: var(--color-black);
-    margin-left: 10px;
     font-weight: 600;
 }
 
 .dashboard .tab_section .nav-link.active {
     background-color: var(--color-primary);
     color: var(--color-white);
-    margin-left: 10px;
 }
 
 :is(.dashboard .tab_section) .info_report,

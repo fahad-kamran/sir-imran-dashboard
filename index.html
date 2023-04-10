@@ -34,12 +34,12 @@
                 <div class="col-12 border-bottom">
                     <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link px-5 active" id="pills-home-tab" data-bs-toggle="pill"
+                            <button class="nav-link px-3 px-md-5 active" id="pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                                 aria-selected="true">Home Page</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link px-5" id="pills-insights-tab" data-bs-toggle="pill"
+                            <button class="nav-link px-3 px-md-5 ms-2" id="pills-insights-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-insights" type="button" role="tab" aria-controls="pills-insights"
                                 aria-selected="false">Insights</button>
                         </li>
@@ -48,7 +48,85 @@
                 <div class="col-12">
                     <div class="tab-content py-3" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab" tabindex="0">...</div>
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <!-- Home Tab Start -->
+                            <div class="row">
+                                <div class="col-12 col-lg-8 mb-3">
+                                    <div class="border bg-white py-5 px-2 position-relative">
+                                        <div class="category_title">Vendors</div>
+                                        <div class="row">
+                                            <div class="col-12 col-md-4 mb-5 mb-md-0">
+                                                <div class="d-flex justify-content-around justify-content-md-between">
+                                                    <a class="inventory_container" href="#">
+                                                        <img src="./assets/images/vendors/record-bill.png" alt="cart">
+                                                        <p class="inventory_title">Record Bills</p>
+                                                    </a>
+                                                    <a class="inventory_container" href="#">
+                                                        <img src="./assets/images/vendors/direct-purchase.png"
+                                                            alt="cart">
+                                                        <p class="inventory_title">Direct Purchase</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-8">
+                                                <div class="d-flex justify-content-between">
+                                                    <a class="inventory_container" href="#">
+                                                        <img src="./assets/images/vendors/purchase-orders.png"
+                                                            alt="cart">
+                                                        <p class="inventory_title">Purchase Orders</p>
+                                                    </a>
+                                                    <a class="inventory_container" href="#">
+                                                        <img src="./assets/images/vendors/receive-inventory.png"
+                                                            alt="cart">
+                                                        <p class="inventory_title">Receive Inventory (GRN)</p>
+                                                    </a>
+                                                    <a class="inventory_container" href="#">
+                                                        <img src="./assets/images/vendors/enter-bills-against.png"
+                                                            alt="cart">
+                                                        <p class="inventory_title">Enter Bills Against Purchase Order
+                                                        </p>
+                                                    </a>
+                                                    <a class="inventory_container" href="#">
+                                                        <img src="./assets/images/vendors/pay-bills.png" alt="cart">
+                                                        <p class="inventory_title">Pay Bills</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-3">
+                                    <div class="border bg-white py-5 position-relative">
+                                        <div class="category_title">Company</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="border bg-white py-5 position-relative">
+                                        <div class="category_title">Customers</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="border bg-white py-5 position-relative">
+                                        <div class="category_title">Inventory</div>
+                                        <div class="d-flex justify-content-around">
+                                            <a class="inventory_container" href="#">
+                                                <img src="./assets/images/vendors/add-cart.png" alt="cart">
+                                                <p class="inventory_title">Add New Product</p>
+                                            </a>
+                                            <a class="inventory_container" href="#">
+                                                <img src="./assets/images/vendors/to-do-list.png" alt="cart">
+                                                <p class="inventory_title">Add New Product</p>
+                                            </a>
+                                            <a class="inventory_container" href="#">
+                                                <img src="./assets/images/vendors/swap.png" alt="cart">
+                                                <p class="inventory_title">Add New Product</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Home Tab End -->
+                        </div>
                         <div class="tab-pane fade" id="pills-insights" role="tabpanel"
                             aria-labelledby="pills-insights-tab" tabindex="0">
                             <!-- graph-portion-start -->
@@ -196,7 +274,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                 <!-- expences_chart_donut -->
+                                                <!-- expences_chart_donut -->
                                                 <!-- this chart initialize in assets/js/customchart.js -->
                                                 <div id="expences_chart_donut" class="chart_container"></div>
                                             </div>
@@ -249,6 +327,14 @@
                                                         <span class="text-uppercase">Cash A/C - Delhi Branch</span>
                                                         <span>1008.00</span>
                                                     </li>
+                                                    <li class="d-flex justify-content-between fs-14">
+                                                        <span class="text-uppercase">Cash A/C - Ho</span>
+                                                        <span>4510.00</span>
+                                                    </li>
+                                                    <li class="d-flex justify-content-between fs-14">
+                                                        <span class="text-uppercase">Cash A/C - Delhi Branch</span>
+                                                        <span>1008.00</span>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -267,7 +353,33 @@
                                         <!-- seventh-card -->
                                     </div>
                                 </div>
-                                <div class="col-12 col-xl-4"></div>
+                                <div class="col-12 col-xl-4">
+                                    <!-- eighth-card -->
+                                    <div class="col-12 mb-3 px-2">
+                                        <div class="card p-2 shadow h-100">
+                                            <div class="bg_primary text-white p-2 text-center">
+                                                <h5 class="mb-0 fs-18">Top 5 Customers by Sales</h5>
+                                            </div>
+                                            <!-- top_five_customers -->
+                                            <!-- this chart initialize in assets/js/customchart.js -->
+                                            <div id="top_five_customers" class="chart_container"></div>
+                                        </div>
+                                    </div>
+                                    <!-- eighth-card -->
+                                    <!-- ninth-card -->
+                                    <div class="col-12 mb-3 px-2">
+                                        <div class="card p-2 shadow h-100">
+                                            <div class="d-flex mb-2">
+                                                <h5 class="mb-0 fs-16 text-uppercase">Items Purchased by last 12 months
+                                                </h5>
+                                            </div>
+                                            <!-- annual_record -->
+                                            <!-- this chart initialize in assets/js/customchart.js -->
+                                            <div id="annual_record" class="chart_container"></div>
+                                        </div>
+                                    </div>
+                                    <!-- ninth-card -->
+                                </div>
                             </div>
                             <!-- graph-portion-start -->
                         </div>
