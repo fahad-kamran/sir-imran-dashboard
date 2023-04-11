@@ -158,6 +158,9 @@ a {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
+.container-xxl{
+    max-width: 100% !important;
+}
 .dashboard .inventory_container{
     width: 70px;
     height: auto;
