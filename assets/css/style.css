@@ -159,9 +159,29 @@ a {
     border-bottom-right-radius: 6px;
 }
 .dashboard .inventory_container{
-    max-width: 70px;
+    width: 70px;
     height: auto;
     text-align: center;
+}
+.right_arrow{
+    max-width:100px;
+}
+@media (max-width:991px){
+    .right_arrow{
+        max-width:70px;
+    }
+}
+@media (max-width:575px){
+    .dashboard .inventory_container{
+        width: 100%;
+    }
+    .right_arrow{
+        min-height: 100px;
+        max-width: 100px;
+    }
+    .right_arrow img{
+        transform: rotate(90deg);
+    }
 }
 .dashboard .inventory_container .inventory_title{
     margin: 0;
