@@ -199,7 +199,7 @@ a {
     margin-bottom: 8px;
 }
 .dashboard .tab_section .nav-link {
-    background-color: var(--color-secondary);
+    background-color: #e1dfdf;
     color: var(--color-black);
     font-weight: 600;
 }
